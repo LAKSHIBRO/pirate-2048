@@ -59,7 +59,7 @@ export function useGameLogic() {
       }
     } else {
       for (let j = 0; j < GRID_SIZE; j++) {
-        let line = newBoard.map((row) => row[j])
+        let line = newBoard.map((row: any[]) => row[j])
         if (direction === 'down') line.reverse()
         let [newLine, lineScore, lineMoved] = moveTiles(line)
         if (direction === 'down') newLine.reverse()
