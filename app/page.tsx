@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { GameBoard } from './components/GameBoard'
-import { Header } from './components/header'
+import { Header } from './components/Header'
 import { useGameLogic } from './hooks/useGameLogic'
 
 export default function PirateTreasure2048() {
